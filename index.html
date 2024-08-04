@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <title>Encriptador</title>
+
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img class="header__logo" src="./imagenes/Logo.png" alt="Logo Alura">
+        </div>
+     </header>
+
+    <main>
+        <div class="main">
+            <div class="izquierda">
+                <textarea id="ingresoTexto" cols=30 rows=10 class="izquierda__textarea" placeholder="Ingrese texto aquí"></textarea>
+                
+                <div class="izquierda__recuadro">
+                    <img class="izquierda__recuadro__icono" src="./imagenes/Vector.svg" alt="Logo exclamación">
+                    <span class="izquierda__recuadro__texto__icono">Sólo letras minúsculas y sin acentos.</span>
+                    
+                    <div class="izquierda__recuadro__botones">
+                        <button id="botonEncriptar" class="boton__encriptar">Encriptar</button>
+                        <button id="botonDesencriptar" class="boton__desencriptar">Desencriptar</button>
+                    </div>    
+                </div>
+
+            </div>
+
+            <div id="derAjus" class="derecha ajustar">
+                <img id="imgMuneco" class="derecha__muneco" src="./imagenes/Muñeco.png" alt="Muñeco Alura">
+                <textarea id="mensajeFinal" class="derecha__mensaje__final" placeholder="Ningún mensaje fue encontrado."></textarea>
+                <p id="mensajeInfo" class="derecha__mensaje__info">Ingrese el texto que desees encriptar o desencriptar.</p>
+                <button id="botonCopiar" class="boton__copiar">Copiar</button>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 <strong class="strong">Ana Lucía Sola</strong>. Desafío Encriptador Alura Latam. Todos los derechos reservados.</p>
+    </footer>  
+    
+    <script src="./js/app.js"></script>
+</body>
+</html>
